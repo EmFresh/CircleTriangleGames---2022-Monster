@@ -1,11 +1,23 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"OB_Ground","path":"objects/OB_Ground/OB_Ground.yy",},"order":1,},
+    {"id":{"name":"SP_TestPlayer","path":"sprites/SP_TestPlayer/SP_TestPlayer.yy",},"order":4,},
+    {"id":{"name":"OB_Initialization","path":"objects/OB_Initialization/OB_Initialization.yy",},"order":2,},
+    {"id":{"name":"R_Initialization","path":"rooms/R_Initialization/R_Initialization.yy",},"order":1,},
+    {"id":{"name":"SP_Dirt","path":"sprites/SP_Dirt/SP_Dirt.yy",},"order":1,},
+    {"id":{"name":"SP_Sky","path":"sprites/SP_Sky/SP_Sky.yy",},"order":2,},
+    {"id":{"name":"SP_TestTileSet","path":"sprites/SP_TestTileSet/SP_TestTileSet.yy",},"order":3,},
+    {"id":{"name":"R_TestRoom","path":"rooms/R_TestRoom/R_TestRoom.yy",},"order":2,},
+    {"id":{"name":"OB_Player","path":"objects/OB_Player/OB_Player.yy",},"order":0,},
+    {"id":{"name":"TS_AveryTest","path":"tilesets/TS_AveryTest/TS_AveryTest.yy",},"order":0,},
+    {"id":{"name":"SP_ConcretTile","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+    {"name":"macOS","path":"options/mac/options_mac.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -14,7 +26,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"R_Initialization","path":"rooms/R_Initialization/R_Initialization.yy",},},
+    {"roomId":{"name":"R_TestRoom","path":"rooms/R_TestRoom/R_TestRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -31,6 +44,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/SP_TestSprites.yy","order":4,"resourceVersion":"1.0","name":"SP_TestSprites","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
