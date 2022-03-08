@@ -1,10 +1,15 @@
 //getting player input
 MoveJump = gamepad_button_check_pressed(4, gp_face1);
-Move = gamepad_axis_value(4, gp_axislh);
-
+//Move = gamepad_axis_value(4, gp_axislh);
+UseActive = keyboard_check_pressed(vk_enter);
+Move = 0.5;
 //movement speed setting
-HorSpeed = Move * WalkSpeed;
+HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
+
+if(UseActive){
+	SC_BonusSpeed();	
+}
 
 if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){
 	VertSpeed = -8;
