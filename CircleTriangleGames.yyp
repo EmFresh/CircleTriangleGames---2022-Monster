@@ -1,14 +1,18 @@
 {
   "resources": [
     {"id":{"name":"OB_Ground","path":"objects/OB_Ground/OB_Ground.yy",},"order":1,},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
     {"id":{"name":"SP_TestPlayer","path":"sprites/SP_TestPlayer/SP_TestPlayer.yy",},"order":4,},
     {"id":{"name":"OB_Initialization","path":"objects/OB_Initialization/OB_Initialization.yy",},"order":2,},
     {"id":{"name":"R_Initialization","path":"rooms/R_Initialization/R_Initialization.yy",},"order":1,},
+    {"id":{"name":"SP_Wall","path":"sprites/SP_Wall/SP_Wall.yy",},"order":5,},
     {"id":{"name":"SP_Dirt","path":"sprites/SP_Dirt/SP_Dirt.yy",},"order":1,},
     {"id":{"name":"SP_Sky","path":"sprites/SP_Sky/SP_Sky.yy",},"order":2,},
     {"id":{"name":"SP_TestTileSet","path":"sprites/SP_TestTileSet/SP_TestTileSet.yy",},"order":3,},
+    {"id":{"name":"OB_Camera","path":"objects/OB_Camera/OB_Camera.yy",},"order":3,},
     {"id":{"name":"R_TestRoom","path":"rooms/R_TestRoom/R_TestRoom.yy",},"order":2,},
     {"id":{"name":"OB_Player","path":"objects/OB_Player/OB_Player.yy",},"order":0,},
+    {"id":{"name":"OB_Wall","path":"objects/OB_Wall/OB_Wall.yy",},"order":4,},
     {"id":{"name":"TS_AveryTest","path":"tilesets/TS_AveryTest/TS_AveryTest.yy",},"order":0,},
     {"id":{"name":"SP_ConcretTile","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"order":0,},
   ],
