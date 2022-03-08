@@ -4,7 +4,7 @@ function SC_Blink(){
 	test = false;
 	
 	for(i = 0; i<101; i++){
-		if((place_meeting(x+i,y,all))){
+		if((place_meeting(x+i,y,OB_Wall))){
 			OB_Player.x += (i-32);
 			break;
 		}else if((place_meeting(x+HorSpeed,y,all))){

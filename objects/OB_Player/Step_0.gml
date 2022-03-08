@@ -2,25 +2,31 @@
 MoveJump		= gamepad_button_check_pressed(4, gp_face1);
 //Move			= gamepad_axis_value(4, gp_axislh);
 UseActive		= keyboard_check_pressed(vk_enter);
-SwitchActive	= keyboard_check_pressed(vk_shift);
+SwitchActiveUP	= keyboard_check_pressed(vk_shift);
+SwitchActiveDown= gamepad_button_check_pressed(4, gp_face4);
 Move = 0.5;
 //movement speed setting
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
-if(UseActive){
+if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
 	SC_PowersSwitch(Powers[PowersSpot]);
 }
-if(SwitchActive){
-	show_debug_message(PowersSpot);
+if(SwitchActiveUP){//moves the powers array up a step, if its at the top it will set it to 0
 	if(PowersSpot == (array_length(Powers)-1)){
 		PowersSpot = 0;
 	}else{
 		PowersSpot += 1;	
 	}
+}else if(SwitchActiveDown){// moves the powers array down a step, if its at the bottom it will set it to the top
+	if(PowersSpot == 0){
+		PowersSpot = (array_length(Powers)-1);	
+	}else{
+		PowersSpot -= 1;	
+	}
 }
 
-if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){
+if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){// checks if there is space above the players head, if there is than jump
 	VertSpeed = -8;
 }
 
