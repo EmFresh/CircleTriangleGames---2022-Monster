@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Powers",
-    "path": "folders/Scripts/Powers.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SC_BonusSpeed",
+  "name": "SC_PowersSwitch",
   "tags": [],
   "resourceType": "GMScript",
 }

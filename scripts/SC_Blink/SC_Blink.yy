@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Powers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SC_BonusSpeed",
+  "name": "SC_Blink",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -4,6 +4,10 @@ Grav = 0.5;
 Move = 0;
 WalkSpeed = 5;
 BonusSpeed = 0;
+Powers = [1];
+Powers[0] = "SC_BonusSpeed";
+Powers[1] = "SC_Blink";
+PowersSpot = 1;
 //gamepad = 0;
 //for(var i = 0; i<11; i++){
 //	if(gamepad_is_connected(i)){
