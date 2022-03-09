@@ -1,14 +1,17 @@
 //getting player input
 MoveJump		= gamepad_button_check_pressed(4, gp_face1);
 //Move			= gamepad_axis_value(4, gp_axislh);
-UseActive		= keyboard_check_pressed(vk_enter);
-SwitchActiveUP	= keyboard_check_pressed(vk_shift);
-SwitchActiveDown= gamepad_button_check_pressed(4, gp_face4);
+UseActive		= keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(4, gp_face3);
+SwitchActiveUP	= keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(4, gp_face4);
+SwitchActiveDown= gamepad_button_check_pressed(4, gp_face2);
+
+
 Move = 0.5;
 //movement speed setting
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
+//what todo when input is given
 if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
 	SC_PowersSwitch(Powers[PowersSpot]);
 }
