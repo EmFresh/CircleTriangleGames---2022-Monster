@@ -1,12 +1,11 @@
 //getting player input
 MoveJump		= gamepad_button_check_pressed(4, gp_face1);
-//Move			= gamepad_axis_value(4, gp_axislh);
-UseActive		= keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(4, gp_face3);
-SwitchActiveUP	= keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(4, gp_face4);
+Move			= gamepad_axis_value(4, gp_axislh);
+UseActive		= gamepad_button_check_pressed(4, gp_face3);
+SwitchActiveUP	= gamepad_button_check_pressed(4, gp_face4);
 SwitchActiveDown= gamepad_button_check_pressed(4, gp_face2);
 
 
-Move = 0.5;
 //movement speed setting
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
