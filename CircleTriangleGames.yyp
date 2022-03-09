@@ -14,6 +14,7 @@
     {"id":{"name":"SP_Sky","path":"sprites/SP_Sky/SP_Sky.yy",},"order":2,},
     {"id":{"name":"SP_TestTileSet","path":"sprites/SP_TestTileSet/SP_TestTileSet.yy",},"order":3,},
     {"id":{"name":"SC_Blink","path":"scripts/SC_Blink/SC_Blink.yy",},"order":1,},
+    {"id":{"name":"SC_Interact","path":"scripts/SC_Interact/SC_Interact.yy",},"order":4,},
     {"id":{"name":"OB_Camera","path":"objects/OB_Camera/OB_Camera.yy",},"order":3,},
     {"id":{"name":"R_TestRoom","path":"rooms/R_TestRoom/R_TestRoom.yy",},"order":2,},
     {"id":{"name":"OB_Player","path":"objects/OB_Player/OB_Player.yy",},"order":0,},

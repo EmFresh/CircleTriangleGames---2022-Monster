@@ -13,9 +13,10 @@ Gold		= 50;
 Damage		= 20;
 
 //setting up the powers array
-Powers		= [1];
-Powers[0]	= "BonusSpeed";
-Powers[1]	= "Blink";
+Powers		= [];
+Powers[0]	= "Interact";
+Powers[1]	= "BonusSpeed";
+Powers[2]	= "Blink";
 PowersSpot	= 1;
 
 //setting up the player health bar
