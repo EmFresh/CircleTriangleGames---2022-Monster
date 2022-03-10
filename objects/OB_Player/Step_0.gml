@@ -5,6 +5,7 @@ UseActive		= gamepad_button_check_pressed(4, gp_face3);
 SwitchActiveUP	= gamepad_button_check_pressed(4, gp_face4);
 SwitchActiveDown= gamepad_button_check_pressed(4, gp_face2);
 
+show_debug_message(Move);
 
 //movement speed setting
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
