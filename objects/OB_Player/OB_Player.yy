@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "OB_Tests",
+    "path": "folders/Objects/OB_Tests.yy",
   },
   "resourceVersion": "1.0",
   "name": "OB_Player",

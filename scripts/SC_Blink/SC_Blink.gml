@@ -4,7 +4,7 @@ function SC_Blink(){
 	test = false;
 	if(OB_Player.Move >0){
 		for(i = 0; i<101; i++){
-			if((place_meeting(x+i,y,OB_Wall))){
+			if((place_meeting(x+i,y,all))){
 				OB_Player.x += (i-32);
 				break;
 			}else if((place_meeting(x+HorSpeed,y,all))){
@@ -21,7 +21,7 @@ function SC_Blink(){
 	}
 	if(OB_Player.Move < 0){
 		for(i = 0; i<101; i++){
-			if((place_meeting(x-i,y,OB_Wall))){
+			if((place_meeting(x-i,y,all))){
 				OB_Player.x -= (i-32);
 				break;
 			}else if((place_meeting(x+HorSpeed,y,all))){

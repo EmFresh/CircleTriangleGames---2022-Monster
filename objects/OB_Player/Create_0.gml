@@ -17,6 +17,7 @@ Powers		= [];
 Powers[0]	= "Interact";
 Powers[1]	= "BonusSpeed";
 Powers[2]	= "Blink";
+Powers[3]	= "Attack";
 PowersSpot	= 1;
 
 //setting up the player health bar

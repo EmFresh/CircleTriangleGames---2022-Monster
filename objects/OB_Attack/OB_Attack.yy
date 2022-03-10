@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SP_ConcretTile",
-    "path": "sprites/SP_ConcretTile/SP_ConcretTile.yy",
+    "name": "SP_Attack",
+    "path": "sprites/SP_Attack/SP_Attack.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +30,7 @@
     "path": "folders/Objects/OB_Tests.yy",
   },
   "resourceVersion": "1.0",
-  "name": "OB_Ground",
+  "name": "OB_Attack",
   "tags": [],
   "resourceType": "GMObject",
 }
