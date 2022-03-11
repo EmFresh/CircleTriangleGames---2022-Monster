@@ -35,9 +35,9 @@ if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){// checks if there is space
 
 //moving
 //vertical collision
-if((place_meeting(x+HorSpeed,y,all))){
+if((place_meeting(x+HorSpeed,y,OB_Wall))){
 	repeat(abs(HorSpeed)){
-		if(!place_meeting(x+sign(HorSpeed),y,all)){
+		if(!place_meeting(x+sign(HorSpeed),y,OB_Wall)){
 			x = x + sign(HorSpeed);	
 		}else{
 			HorSpeed = 0;
@@ -46,9 +46,9 @@ if((place_meeting(x+HorSpeed,y,all))){
 }
 x = x + HorSpeed;
 //vertical collision
-if(place_meeting(x,y+VertSpeed,all)){
+if(place_meeting(x,y+VertSpeed,OB_Wall)){
 	repeat(abs(VertSpeed)){
-		if(!place_meeting(x,y+sign(VertSpeed),all)){
+		if(!place_meeting(x,y+sign(VertSpeed),OB_Wall)){
 			y = y + sign(VertSpeed);	
 		}else{
 			VertSpeed = 0;

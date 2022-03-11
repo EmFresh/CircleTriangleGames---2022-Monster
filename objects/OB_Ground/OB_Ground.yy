@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "OB_Wall",
+    "path": "objects/OB_Wall/OB_Wall.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "OB_Tests",
-    "path": "folders/Objects/OB_Tests.yy",
+    "name": "OB_Hitboxes",
+    "path": "folders/Objects/OB_Tests/OB_Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "OB_Ground",
