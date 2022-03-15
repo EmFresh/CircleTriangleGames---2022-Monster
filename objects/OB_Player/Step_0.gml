@@ -53,11 +53,14 @@ if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){// checks if there is space
 }
 
 //moving
-//vertical collision
+//horiztonal collision
 if((place_meeting(x+HorSpeed,y,OB_Wall))){
 	repeat(abs(HorSpeed)){
 		if(!place_meeting(x+sign(HorSpeed),y,OB_Wall)){
 			x = x + sign(HorSpeed);	
+			if((place_meeting(x+HorSpeed,y,OB_Ramp))){
+				y = y - sign(VertSpeed);
+			}
 		}else{
 			HorSpeed = 0;
 		}

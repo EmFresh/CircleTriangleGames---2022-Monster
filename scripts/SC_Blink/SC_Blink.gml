@@ -11,6 +11,7 @@ function SC_Blink(){
 				OB_Player.x += 0;
 				break;
 			}else if(i == 100){
+				OB_Player.sprite_index = SP_PlayerBlink;
 				test = true;
 			}
 		}
