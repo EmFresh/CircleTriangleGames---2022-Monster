@@ -27,12 +27,14 @@ HealthBarX	= 50;
 HealthBarY	= 50;
 
 //detecting the gamepad and setting it up
-gamepad		= 0;
+gamepad = 0;
 for(var i = 0; i<11; i++){
 	if(gamepad_is_connected(i)){
-		gamepad = i
+		gamepad = i;
 		break;
+	}else{
+		gamepad = 4;
 	}
 }
-show_debug_message(gamepad);
+
 gamepad_set_axis_deadzone(4,0.05);
