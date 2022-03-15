@@ -5,9 +5,30 @@ UseActive		= gamepad_button_check_pressed(gamepad, gp_face3);
 SwitchActiveUP	= gamepad_button_check_pressed(gamepad, gp_face4);
 SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 
+
+
 //movement speed setting
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
+
+if(BonusSpeed > 0){
+	sprite_index = SP_PlayerRun;
+	if(Move < 0){
+		image_xscale = -1;	
+	}else{
+		image_xscale = 1;	
+	}
+}else if(Move == 0){
+	image_speed = 0.3;
+	sprite_index = SP_PlayerIdle;
+}else{
+	sprite_index = SP_PlayerWalk;
+	if(Move < 0){
+		image_xscale = -1;	
+	}else{
+		image_xscale = 1;	
+	}
+}
 
 //what todo when input is given
 if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
