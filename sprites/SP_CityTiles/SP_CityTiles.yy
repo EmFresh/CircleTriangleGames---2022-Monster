@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 4,
+  "bbox_right": 255,
   "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_bottom": 159,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 256,
+  "height": 160,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7c2205b2-3674-4e05-a878-4b54c525c528","path":"sprites/SP_Wall/SP_Wall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7c2205b2-3674-4e05-a878-4b54c525c528","path":"sprites/SP_Wall/SP_Wall.yy",},"LayerId":{"name":"e43c8cc1-28f1-4bdb-9ebb-a128b4bddbd9","path":"sprites/SP_Wall/SP_Wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SP_Wall","path":"sprites/SP_Wall/SP_Wall.yy",},"resourceVersion":"1.0","name":"7c2205b2-3674-4e05-a878-4b54c525c528","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"903d4708-c388-4b6a-bb40-d5393b6f7fe6","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"903d4708-c388-4b6a-bb40-d5393b6f7fe6","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},"LayerId":{"name":"f4c6b183-a392-409b-9a43-e912c0d0ee19","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"SP_CityTiles","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},"resourceVersion":"1.0","name":"903d4708-c388-4b6a-bb40-d5393b6f7fe6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"SP_Wall","path":"sprites/SP_Wall/SP_Wall.yy",},
+    "spriteId": {"name":"SP_CityTiles","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"28c143f2-8fcc-44cb-bff6-249664eb92f9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c2205b2-3674-4e05-a878-4b54c525c528","path":"sprites/SP_Wall/SP_Wall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3167088e-55d2-4bd5-a620-2d933bb23897","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"903d4708-c388-4b6a-bb40-d5393b6f7fe6","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SP_Wall","path":"sprites/SP_Wall/SP_Wall.yy",},
+    "parent": {"name":"SP_CityTiles","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},
     "resourceVersion": "1.4",
-    "name": "SP_Wall",
+    "name": "SP_CityTiles",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e43c8cc1-28f1-4bdb-9ebb-a128b4bddbd9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f4c6b183-a392-409b-9a43-e912c0d0ee19","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SP_TestSprites",
-    "path": "folders/Sprites/SP_TestSprites.yy",
+    "name": "SP_FinalSprites",
+    "path": "folders/Sprites/SP_FinalSprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SP_Wall",
+  "name": "SP_CityTiles",
   "tags": [],
   "resourceType": "GMSprite",
 }

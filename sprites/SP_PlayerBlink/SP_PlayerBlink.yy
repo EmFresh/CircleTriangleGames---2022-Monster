@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SP_FinalSprites",
-    "path": "folders/Sprites/SP_FinalSprites.yy",
+    "name": "SP_Player",
+    "path": "folders/Sprites/SP_FinalSprites/SP_Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "SP_PlayerBlink",

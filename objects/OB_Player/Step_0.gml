@@ -6,7 +6,6 @@ SwitchActiveUP	= gamepad_button_check_pressed(gamepad, gp_face4);
 SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 
 
-
 //movement speed setting
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
@@ -52,7 +51,9 @@ if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){// checks if there is space
 	VertSpeed = -8;
 }
 
+
 //moving
+
 //horiztonal collision
 if((place_meeting(x+HorSpeed,y,OB_Wall))){
 	repeat(abs(HorSpeed)){
@@ -81,3 +82,12 @@ if(place_meeting(x,y+VertSpeed,OB_Wall)){
 y = y + VertSpeed;
 
 HorSpeed = 0;
+
+
+
+
+
+
+
+
+
