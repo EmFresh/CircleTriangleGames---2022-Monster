@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "HealthBar",
-    "path": "folders/Sprites/GUI/HealthBar.yy",
+    "path": "folders/Sprites/SP_GUI/HealthBar.yy",
   },
   "resourceVersion": "1.0",
   "name": "SP_HealthBar",

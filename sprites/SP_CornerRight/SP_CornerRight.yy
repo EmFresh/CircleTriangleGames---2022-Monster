@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 23,
-  "bbox_bottom": 25,
+  "bbox_right": 20,
+  "bbox_top": 15,
+  "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7c2205b2-3674-4e05-a878-4b54c525c528","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7c2205b2-3674-4e05-a878-4b54c525c528","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"LayerId":{"name":"e43c8cc1-28f1-4bdb-9ebb-a128b4bddbd9","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SP_ConcretTile","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"resourceVersion":"1.0","name":"7c2205b2-3674-4e05-a878-4b54c525c528","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b4375c6c-6fbe-4fd2-bbf2-90018b499ec1","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b4375c6c-6fbe-4fd2-bbf2-90018b499ec1","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},"LayerId":{"name":"9dd57f3b-03c9-4a12-8d81-9bc3f958aad1","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"SP_CornerRight","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},"resourceVersion":"1.0","name":"b4375c6c-6fbe-4fd2-bbf2-90018b499ec1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"SP_ConcretTile","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},
+    "spriteId": {"name":"SP_CornerRight","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8c6ee49a-0d5a-47e2-8c79-1192a25fd10a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c2205b2-3674-4e05-a878-4b54c525c528","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3a270ba2-cde3-4e09-acde-100ab152128e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b4375c6c-6fbe-4fd2-bbf2-90018b499ec1","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SP_ConcretTile","path":"sprites/SP_ConcretTile/SP_ConcretTile.yy",},
+    "parent": {"name":"SP_CornerRight","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},
     "resourceVersion": "1.4",
-    "name": "SP_ConcretTile",
+    "name": "SP_CornerRight",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e43c8cc1-28f1-4bdb-9ebb-a128b4bddbd9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9dd57f3b-03c9-4a12-8d81-9bc3f958aad1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/SP_ColItems.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SP_ConcretTile",
+  "name": "SP_CornerRight",
   "tags": [],
   "resourceType": "GMSprite",
 }

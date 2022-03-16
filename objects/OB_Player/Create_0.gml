@@ -5,6 +5,8 @@ Grav		= 0.5;
 Move		= 0;
 WalkSpeed	= 5;
 BonusSpeed	= 0;
+BlinkDist = 0;
+Blinking = false;
 
 //player stats
 Health		= 100;

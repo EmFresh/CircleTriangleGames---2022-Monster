@@ -10,7 +10,9 @@ SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
-if(BonusSpeed > 0){
+if(Blinking == true){
+	
+}else if(BonusSpeed > 0){
 	sprite_index = SP_PlayerRun;
 	if(Move < 0){
 		image_xscale = -1;	

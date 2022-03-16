@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SP_TestSprites",
-    "path": "folders/Sprites/SP_TestSprites.yy",
+    "name": "SP_ColItems",
+    "path": "folders/Sprites/SP_ColItems.yy",
   },
   "resourceVersion": "1.0",
   "name": "SP_ConcretTileTop",
