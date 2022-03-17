@@ -28,6 +28,7 @@
     {"id":{"name":"OB_Initialization","path":"objects/OB_Initialization/OB_Initialization.yy",},"order":0,},
     {"id":{"name":"SP_CityTiles","path":"sprites/SP_CityTiles/SP_CityTiles.yy",},"order":0,},
     {"id":{"name":"SP_PlayerWalk","path":"sprites/SP_PlayerWalk/SP_PlayerWalk.yy",},"order":5,},
+    {"id":{"name":"OB_Clock","path":"objects/OB_Clock/OB_Clock.yy",},"order":0,},
     {"id":{"name":"TS_Trees","path":"tilesets/TS_Trees/TS_Trees.yy",},"order":3,},
     {"id":{"name":"FoxSprites36","path":"sprites/FoxSprites36/FoxSprites36.yy",},"order":9,},
     {"id":{"name":"OB_GroundMid","path":"objects/OB_GroundMid/OB_GroundMid.yy",},"order":5,},
