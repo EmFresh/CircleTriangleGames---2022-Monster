@@ -218,6 +218,9 @@
     {"name":"inst_1D86AF0D","path":"rooms/R_TestRoom/R_TestRoom.yy",},
     {"name":"inst_3B8761ED","path":"rooms/R_TestRoom/R_TestRoom.yy",},
     {"name":"inst_60E265A5","path":"rooms/R_TestRoom/R_TestRoom.yy",},
+    {"name":"inst_7C4C13","path":"rooms/R_TestRoom/R_TestRoom.yy",},
+    {"name":"inst_72F5BADD","path":"rooms/R_TestRoom/R_TestRoom.yy",},
+    {"name":"inst_4ED22AE9","path":"rooms/R_TestRoom/R_TestRoom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -235,10 +238,10 @@
   },
   "physicsSettings": {
     "inheritPhysicsSettings": false,
-    "PhysicsWorld": false,
+    "PhysicsWorld": true,
     "PhysicsWorldGravityX": 0.0,
-    "PhysicsWorldGravityY": 10.0,
-    "PhysicsWorldPixToMetres": 0.1,
+    "PhysicsWorldGravityY": 5.0,
+    "PhysicsWorldPixToMetres": 1.0,
   },
   "parent": {
     "name": "Rooms",
