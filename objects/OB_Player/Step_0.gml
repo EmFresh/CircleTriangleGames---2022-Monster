@@ -10,10 +10,28 @@ SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
+if(MoveJump){
+	Jumping = true;	
+}
+
+show_debug_message(VertSpeed);
 if(Health <= 0){
 	sprite_index = SP_PlayerDeath;
 	if(image_index >= 4){
 		image_speed = 0;	
+	}
+}else if(Jumping){
+	image_speed = 0.3;
+	sprite_index = SP_PlayerJump
+	if(image_index >= 4){
+		
+		if(place_meeting(x, y + 1, OB_Ground)) && (Jumping){// checks if there is space above the players head, if there is than jump
+			VertSpeed = -8;
+		}
+		if(image_index >= 10){
+			image_speed = 0;
+			Jumping = false;
+		}
 	}
 }else if(BonusSpeed > 0){
 	sprite_index = SP_PlayerRun;
@@ -28,6 +46,7 @@ if(Health <= 0){
 }else{
 	sprite_index = SP_PlayerWalk;
 	if(Move < 0){
+		image_speed = 0.3;
 		image_xscale = -1;	
 	}else{
 		image_xscale = 1;	
@@ -53,9 +72,7 @@ if(SwitchActiveUP){//moves the powers array up a step, if its at the top it will
 	}
 }
 
-if(place_meeting(x, y + 1, OB_Ground)) && (MoveJump){// checks if there is space above the players head, if there is than jump
-	VertSpeed = -8;
-}
+
 
 
 //moving
