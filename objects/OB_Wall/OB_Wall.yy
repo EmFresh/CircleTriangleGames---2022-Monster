@@ -3,7 +3,7 @@
     "name": "SP_Wall",
     "path": "sprites/SP_Wall/SP_Wall.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

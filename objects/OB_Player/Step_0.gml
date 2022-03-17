@@ -10,10 +10,12 @@ HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
 //what todo when input is given
-if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
+if(UseActive){ 
+	// uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
 	SC_PowersSwitch(Powers[PowersSpot]);
 }
-if(SwitchActiveUP){//moves the powers array up a step, if its at the top it will set it to 0
+if(SwitchActiveUP){
+	//moves the powers array up a step, if its at the top it will set it to 0
 	if(PowersSpot == (array_length(Powers)-1)){
 		PowersSpot = 0;
 	}else{

@@ -3,7 +3,7 @@
     "name": "SP_TestPlayer",
     "path": "sprites/SP_TestPlayer/SP_TestPlayer.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
