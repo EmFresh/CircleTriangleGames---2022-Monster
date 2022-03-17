@@ -10,8 +10,11 @@ SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
-if(Blinking == true){
-	
+if(Health <= 0){
+	sprite_index = SP_PlayerDeath;
+	if(image_index >= 4){
+		image_speed = 0;	
+	}
 }else if(BonusSpeed > 0){
 	sprite_index = SP_PlayerRun;
 	if(Move < 0){
@@ -31,6 +34,7 @@ if(Blinking == true){
 	}
 }
 
+if(Health > 0){
 //what todo when input is given
 if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
 	SC_PowersSwitch(Powers[PowersSpot]);
@@ -82,7 +86,7 @@ if(place_meeting(x,y+VertSpeed,OB_Wall)){
 	VertSpeed = 0;
 }
 y = y + VertSpeed;
-
+}
 HorSpeed = 0;
 
 

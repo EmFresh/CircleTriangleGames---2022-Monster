@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "OB_Hitboxes",
-    "path": "folders/Objects/OB_Tests/OB_Hitboxes.yy",
+    "path": "folders/Objects/OB_Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "OB_Cornerright",
