@@ -5,4 +5,4 @@ draw_sprite_stretched(SP_HealthBar,0,HealthBarX, HealthBarY, ((Health/HealthMax)
 draw_sprite(SP_HealthDontainer,0, HealthBarX, HealthBarY);
 draw_text(x,y,Powers[PowersSpot]);
 
-draw_sprite(SP_Clock,0,1800,100);
+draw_sprite(SP_Clock,0,1700,25);
