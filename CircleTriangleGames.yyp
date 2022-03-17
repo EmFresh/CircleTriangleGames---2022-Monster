@@ -21,6 +21,7 @@
     {"id":{"name":"OB_Ramp","path":"objects/OB_Ramp/OB_Ramp.yy",},"order":2,},
     {"id":{"name":"SP_PlayerRun","path":"sprites/SP_PlayerRun/SP_PlayerRun.yy",},"order":4,},
     {"id":{"name":"SP_CornerRight","path":"sprites/SP_CornerRight/SP_CornerRight.yy",},"order":6,},
+    {"id":{"name":"SP_NightBackground","path":"sprites/SP_NightBackground/SP_NightBackground.yy",},"order":0,},
     {"id":{"name":"OB_Attack","path":"objects/OB_Attack/OB_Attack.yy",},"order":1,},
     {"id":{"name":"SP_PlayerBlinkEnter","path":"sprites/SP_PlayerBlinkEnter/SP_PlayerBlinkEnter.yy",},"order":2,},
     {"id":{"name":"R_Game","path":"rooms/R_Game/R_Game.yy",},"order":3,},
@@ -112,6 +113,7 @@
     {"folderPath":"folders/Sprites/SP_FinalSprites/SP_UI.yy","order":12,"resourceVersion":"1.0","name":"SP_UI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/SP_FinalSprites/SP_decos.yy","order":13,"resourceVersion":"1.0","name":"SP_decos","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/OB_CTRLItems.yy","order":5,"resourceVersion":"1.0","name":"OB_CTRLItems","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/SP_Background.yy","order":8,"resourceVersion":"1.0","name":"SP_Background","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
