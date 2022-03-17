@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SP_FinalSprites",
-    "path": "folders/Sprites/SP_FinalSprites.yy",
+    "name": "SP_Tiles",
+    "path": "folders/Sprites/SP_FinalSprites/SP_Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "SP_CityTiles",
