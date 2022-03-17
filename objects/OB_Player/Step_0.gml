@@ -1,8 +1,8 @@
 //getting player input
 MoveJump		= gamepad_button_check_pressed(gamepad, gp_face1);
 Move			= gamepad_axis_value(gamepad, gp_axislh);
-UseActive		= gamepad_button_check_pressed(gamepad, gp_face3);
-SwitchActiveUP	= gamepad_button_check_pressed(gamepad, gp_face4);
+UseActive		= gamepad_button_check_pressed(gamepad, gp_face3) or keyboard_check_pressed(vk_enter);
+SwitchActiveUP	= gamepad_button_check_pressed(gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
 SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 
 
@@ -20,9 +20,15 @@ if(Health <= 0){
 	if(image_index >= 4){
 		image_speed = 0;	
 	}
+}else if(Attack){
+	sprite_index = SP_PlayerAttack;
+	if(image_index >= 6){
+		Attack = false;	
+	}
+
 }else if(Jumping){
 	image_speed = 0.3;
-	sprite_index = SP_PlayerJump
+	sprite_index = SP_PlayerJump;
 	if(image_index >= 4){
 		
 		if(place_meeting(x, y + 1, OB_Ground)) && (Jumping){// checks if there is space above the players head, if there is than jump

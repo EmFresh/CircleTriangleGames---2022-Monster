@@ -8,6 +8,7 @@ BonusSpeed	= 0;
 BlinkDist = 0;
 Blinking = false;
 Jumping = false;
+Attack = false;
 
 //player stats
 Health		= 100;
