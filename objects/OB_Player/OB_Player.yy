@@ -3,7 +3,7 @@
     "name": "SP_PlayerFullyAnimated",
     "path": "sprites/SP_PlayerFullyAnimated/SP_PlayerFullyAnimated.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

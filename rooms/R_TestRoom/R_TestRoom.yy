@@ -217,6 +217,7 @@
     {"name":"inst_7501AD2B","path":"rooms/R_TestRoom/R_TestRoom.yy",},
     {"name":"inst_1D86AF0D","path":"rooms/R_TestRoom/R_TestRoom.yy",},
     {"name":"inst_3B8761ED","path":"rooms/R_TestRoom/R_TestRoom.yy",},
+    {"name":"inst_60E265A5","path":"rooms/R_TestRoom/R_TestRoom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -3,7 +3,7 @@
     "name": "SP_ConcretTile",
     "path": "sprites/SP_ConcretTile/SP_ConcretTile.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -53,6 +53,7 @@
     {"id":{"name":"SP_PlayerDeath","path":"sprites/SP_PlayerDeath/SP_PlayerDeath.yy",},"order":12,},
     {"id":{"name":"Background_SunAndMoon","path":"sprites/Background_SunAndMoon/Background_SunAndMoon.yy",},"order":1,},
     {"id":{"name":"SP_TestTileSet","path":"sprites/SP_TestTileSet/SP_TestTileSet.yy",},"order":3,},
+    {"id":{"name":"SC_EnemyFallow","path":"scripts/SC_EnemyFallow/SC_EnemyFallow.yy",},"order":1,},
     {"id":{"name":"SC_Blink","path":"scripts/SC_Blink/SC_Blink.yy",},"order":1,},
     {"id":{"name":"SC_Attack","path":"scripts/SC_Attack/SC_Attack.yy",},"order":2,},
     {"id":{"name":"SC_Interact","path":"scripts/SC_Interact/SC_Interact.yy",},"order":4,},
