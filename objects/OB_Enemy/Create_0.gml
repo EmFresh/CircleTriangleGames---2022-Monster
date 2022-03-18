@@ -1,4 +1,11 @@
 /// @description intalization of enemy
 EHealth		= 100;
 EMaxHealth	= 100;
-spd = .01;
+spd = .3;
+jump = 0;
+maxFallSpd = -.5;
+fallspd = maxFallSpd;
+
+movepoint = SC_EnemySelectWaypoint(
+SC_GetAllObjectIDs(OB_WanderPoint), 
+instance_number(OB_WanderPoint));

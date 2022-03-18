@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Enemy Actions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SC_EnemyWander",
+  "name": "SC_EnemyFallowX",
   "tags": [],
   "resourceType": "GMScript",
 }
