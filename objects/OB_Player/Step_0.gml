@@ -24,14 +24,14 @@ if (Grounded == true) and (MoveJump == true){
 if (HorSpeed == 0) and (Grounded == true) {
 	state = PStates.PIdle
 }
-while (state == PStates.PIdle){ // Idle
+if (state == PStates.PIdle){ // Idle
 	//Animation
 		sprite_index = SP_PlayerIdle
 			image_speed = 0.5;
 	//State Changes
-	//if abs(HorSpeed) < 0 {//and (Grounded == true){
+	if abs(HorSpeed) < 0 and (Grounded == true){
 		state = PStates.PWalk
-	
+	}
 	if (Jumping = true){
 		state = PStates.PJump
 	}
@@ -50,7 +50,7 @@ while (state == PStates.PIdle){ // Idle
 	
 }
 if (state == PStates.PWalk){ //Walking
-	if (abs(HorSpeed) = 0) and (Grounded = true) {
+	if (abs(HorSpeed) == 0) and (Grounded == true) {
 		state = PStates.PIdle
 		}
 		sprite_index = SP_PlayerWalk
@@ -63,7 +63,7 @@ if (state == PStates.PWalk){ //Walking
 		image_xscale = -1;
 		}
 		//State Changes
-	if (Jumping = true and Grounded = true){
+	if (Jumping == true and Grounded == true){
 		state = PStates.PJump
 	}
 	if (BonusSpeed > 0){
@@ -85,7 +85,13 @@ if (state == PStates.PJump){
 		if image_index >= 5 {
 			image_speed = 0 
 			VertSpeed = -8  
-	
+	if (Move > 0) {
+	image_xscale = 1;
+
+	}
+	 if (Move < 0) {
+		image_xscale = -1;
+		}
 		
 		 state = PStates.pFall
 	}
@@ -99,12 +105,18 @@ if (state = PStates.pFall){
 			image_speed = 0 }
 		if place_meeting(x,y+1,OB_Ground){
 		Jumping = false
-		
+		if (Move > 0) {
+	image_xscale = 1;
+
 	}
-if (HorSpeed = 0) and (Jumping == false) {
+	 if (Move < 0) {
+		image_xscale = -1;
+		}
+	}
+if (HorSpeed == 0) and (Jumping == false) {
 		state = PStates.PIdle
 		}
-		if (HorSpeed > 0 or HorSpeed < 0) and (Jumping == false)
+		if abs(HorSpeed < 0) and (Jumping == false)
 		{
 		state = PStates.PWalk
 	}
