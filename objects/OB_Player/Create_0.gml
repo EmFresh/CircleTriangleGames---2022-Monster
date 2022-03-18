@@ -6,12 +6,13 @@ VertSpeed	= 0;
 Grav		= 0.3;
 Move		= 0;
 WalkSpeed	= 5;
-BonusSpeed	= 0;
-BlinkDist = 0;
+BonusSpeed	= 10;
+BlinkDist = 6;
 Blinking = false;
 Jumping = false;
 Attack = false;
 Grounded = true;
+Running = false
 
 //player stats
 Health		= 100;
