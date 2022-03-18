@@ -13,14 +13,31 @@ function SC_EnemyAttack(enemy){
     //Ill figure this out later
     switch(enemy)
     {
-    case ENEMY1:
+    case ENEMY_TYPE.ENEMY1:
+	
+	if(sprite_index!= SP_LurkerSpike)
+		sprite_index = SP_LurkerSpike;
+	if(image_index >= 4)
+	{
+		if(place_meeting(x,y,OB_Player))
+		{		
+			
+			player = instance_nearest(x,y,OB_Player);
+			player.Health -= 20;
+		}
+		sprite_index = SP_LurkerIdle;
+		attackingE = true;
+	}		
         
     break;
-    case ENEMY2:
+    case ENEMY_TYPE.ENEMY2:
+	
     break;
-    case ENEMY3:
+    case ENEMY_TYPE.ENEMY3:
+	
     break;
-    case ENEMY4:
+    case ENEMY_TYPE.ENEMY4:
+	
     break;   
     }
 
