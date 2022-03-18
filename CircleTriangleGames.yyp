@@ -6,6 +6,7 @@
     {"id":{"name":"SP_PlayerFall","path":"sprites/SP_PlayerFall/SP_PlayerFall.yy",},"order":15,},
     {"id":{"name":"OB_Enemy","path":"objects/OB_Enemy/OB_Enemy.yy",},"order":3,},
     {"id":{"name":"SP_PlayerJump","path":"sprites/SP_PlayerJump/SP_PlayerJump.yy",},"order":14,},
+    {"id":{"name":"SP_DayBackground","path":"sprites/SP_DayBackground/SP_DayBackground.yy",},"order":1,},
     {"id":{"name":"SP_Col","path":"sprites/SP_Col/SP_Col.yy",},"order":8,},
     {"id":{"name":"SP_TestEnemy","path":"sprites/SP_TestEnemy/SP_TestEnemy.yy",},"order":6,},
     {"id":{"name":"SP_Clock","path":"sprites/SP_Clock/SP_Clock.yy",},"order":1,},
