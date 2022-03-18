@@ -88,7 +88,7 @@ if (Hstate == HStates.HJump){
 		image_xscale = -1;
 		}
 		
-		 Hstate = PStates.pFall
+		 Hstate = HStates.HFall
 	}
 }
 
