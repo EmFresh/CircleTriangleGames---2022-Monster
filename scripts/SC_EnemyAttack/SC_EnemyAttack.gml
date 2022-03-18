@@ -17,8 +17,8 @@ function SC_EnemyAttack(enemy){
 	
 	if(sprite_index!= SP_LurkerSpike)
 		sprite_index = SP_LurkerSpike;
-	
-	if()
+		enemyAttacking = true;
+	if(image_index == image_number -2)
 	if(place_meeting(x,y,OB_Player))
 		{		
 			
@@ -26,19 +26,20 @@ function SC_EnemyAttack(enemy){
 			player.Health -= 10;
 		}
 	
-	if(image_index >= 4)
+	if(image_index >= image_number - 1)
 	{
 		
 		sprite_index = SP_LurkerIdle;
-		attackingE = true;
+			enemyAttacking = true;
+
 	}		
         
     break;
-    case ENEMY2:
+    case  ENEMY_TYPE.ENEMY2:
     break;
-    case ENEMY3:
+    case  ENEMY_TYPE.ENEMY3:
     break;
-    case ENEMY4:
+    case  ENEMY_TYPE.ENEMY4:
     break;   
     }
 

@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "SP_TestEnemy",
-    "path": "sprites/SP_TestEnemy/SP_TestEnemy.yy",
+    "name": "SP_LurkerWalk",
+    "path": "sprites/SP_LurkerWalk/SP_LurkerWalk.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "OB_EnemyTest",
+    "path": "objects/OB_EnemyTest/OB_EnemyTest.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -34,11 +37,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "OB_Tests",
-    "path": "folders/Objects/OB_Tests.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "OB_Enemy",
+  "name": "OB_Enemy1",
   "tags": [],
   "resourceType": "GMObject",
 }
