@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Enemy Actions",
-    "path": "folders/Scripts/Enemy Actions.yy",
+    "name": "CircleTriangleGames",
+    "path": "CircleTriangleGames.yyp",
   },
   "resourceVersion": "1.0",
   "name": "SC_EnemyAttack",

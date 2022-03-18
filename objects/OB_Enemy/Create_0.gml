@@ -4,7 +4,6 @@ EMaxHealth	= 100;
 spd = .3;
 jump = 0;
 maxFallSpd = -.5;
-fallspd = maxFallSpd;
 
 movepoint = SC_EnemySelectWaypoint(
 SC_GetAllObjectIDs(OB_WanderPoint), 

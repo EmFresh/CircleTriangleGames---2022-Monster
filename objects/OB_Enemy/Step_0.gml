@@ -5,6 +5,9 @@ player = instance_nearest(x,y,OB_Player);
 lastx = x;
 lasty = y;
 
+
+fallspd = maxFallSpd;
+
 playerFindDist = 32 * 3;
 
 //im dead
@@ -38,24 +41,35 @@ if(!SC_InRange(id, instance_nearest(x,y,OB_Player), playerFindDist))
 	
 
 //jump if obstical in way
-if(jump == 0 && place_meeting(x,y,OB_Wall))// checks if there is space below the enemy, if there is than jump
-{	jump = 8;
-show_debug_message("jumping");
+if(jump ==0&& place_meeting(x,y,OB_Wall))
+{
+	jump = 8;
+	show_debug_message("jumping");
 }
 
-jump+= fallspd;
-jump = clamp(jump,0,jump);
+	jump+= fallspd;
+	jump = clamp(jump,0,jump);
+	fallspd += (-fallspd * 1.2) * sign(jump);
 
-
+	y -= fallspd;	
+	//place on ground
+	while (place_meeting(x,y - sign(fallspd),OB_Collisions) && 
+	instance_nearest(x,y,OB_Collisions).y > y)
+				y += sign(fallspd);
+				
 //horizontal collision
 if(place_meeting(x,y,OB_Wall))
 	x = lastx;
 
-y -= fallspd + -fallspd * 8 * sign(jump);
+
+
+
 
 //vertical collision
-if(place_meeting(x,y,OB_Ground))
-	y = instance_nearest(x,y,OB_Ground).y;
+//vertical collision
+	
+
+
 
 
 

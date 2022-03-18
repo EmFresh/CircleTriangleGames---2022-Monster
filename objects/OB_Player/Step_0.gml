@@ -9,7 +9,7 @@ SwitchActiveDown = gamepad_button_check_pressed(global.gamepad, gp_face2);
 //Movement
 
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
-VertSpeed = VertSpeed + Grav;
+VertSpeed += Grav;
 
 
 //Flag Checks
@@ -206,11 +206,11 @@ if(place_meeting(x+HorSpeed,y,OB_Wall))
 //}
 x = x + HorSpeed;
 //vertical collision
-	 if(place_meeting(x,y+VertSpeed,OB_Wall))
+	 if(place_meeting(x,y+VertSpeed,OB_Collisions))
 		{
 		
 		//repeat(abs(VertSpeed)){
-			while (!place_meeting(x,y+sign(VertSpeed),OB_Wall))
+			while (!place_meeting(x,y+sign(VertSpeed),OB_Collisions))
 			{
 				y = y + sign(VertSpeed);
 				
