@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SP_Player",
-    "path": "folders/Sprites/SP_FinalSprites/SP_Player.yy",
+    "name": "SP_Fox",
+    "path": "folders/Sprites/SP_FinalSprites/SP_Player/SP_Fox.yy",
   },
   "resourceVersion": "1.0",
   "name": "SP_PlayerIdle",
