@@ -102,7 +102,6 @@ if (state = PStates.pFall){
 		image_speed = .5
 		if image_index <= 5 {
 			image_speed = 0 }
-		if place_meeting(x,y+1,OB_Ground){
 		
 		if (Move > 0) {
 	image_xscale = 1;
@@ -111,14 +110,58 @@ if (state = PStates.pFall){
 	 if (Move < 0) {
 		image_xscale = -1;
 		}
-	}
-	Jumping = false
-if (Move == 0) and (Jumping == false) {
-		state = PStates.PIdle
-		}
-		
 	
+	if place_meeting(x,y+0.2,OB_Ground){
+	Jumping = false
 }
+if (Jumping == false) and (Grounded == true) {
+		state = PStates.PIdle
+		}	
+}
+if (state = PStates.PAttack){
+	sprite_index = SP_PlayerAttack
+	image_speed = 1
+	Attack = false;
+	if Attack == false{
+		state = PStates.PIdle
+	}
+}
+	
+if (state = PStates.PBlink){
+	sprite_index = SP_PlayerBlink
+	image_speed = 1
+	if image_index = 5{
+	image_speed = 0
+	}
+	if Blinking == false{
+	state = PStates.PIdle
+	}
+}
+if (state = PStates.PRun){
+	Running = true
+	sprite_index = SP_PlayerRun
+	image_speed = 1
+	if(Move < 0){
+		image_xscale = -1;	
+	}else{
+		image_xscale = 1;
+		
+	}
+	if Running == true{
+		BonusSpeed = (BonusSpeed  - 1)
+	}
+	if (BonusSpeed == 0) {
+		state = PStates.PIdle
+		Running = false
+	}
+}
+
+if (state = PStates.PDeath){
+	sprite_index = SP_PlayerDeath
+	image_speed = .4
+	image_speed = 0;
+}
+	
 show_debug_message(state)
 
 //what todo when input is given
