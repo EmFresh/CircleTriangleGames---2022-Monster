@@ -1,10 +1,10 @@
 //getting player input
-MoveJump		= gamepad_button_check_pressed(gamepad, gp_face1);
-Move			= gamepad_axis_value(gamepad, gp_axislh);
-UseActive		= gamepad_button_check_pressed(gamepad, gp_face3) or keyboard_check_pressed(vk_enter);
-SwitchActiveUP	= gamepad_button_check_pressed(gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
-SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
-
+MoveJump		= gamepad_button_check_pressed(global.gamepad, gp_face1);
+Move			= gamepad_axis_value(global.gamepad, gp_axislh);
+UseActive		= gamepad_button_check_pressed(global.gamepad, gp_face3) or keyboard_check_pressed(vk_enter);
+SwitchActiveUP	= gamepad_button_check_pressed(global.gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
+SwitchActiveDown = gamepad_button_check_pressed(global.gamepad, gp_face2);
+					
 
 //Movement
 

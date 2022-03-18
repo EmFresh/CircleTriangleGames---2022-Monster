@@ -47,14 +47,16 @@ enum PStates {
 state = PStates.PIdle
 
 //detecting the gamepad and setting it up
-gamepad = 0;
+global.gamepad = 0;
 for(var i = 0; i<11; i++){
 	if(gamepad_is_connected(i)){
-		gamepad = i;
+		global.gamepad = i;
 		break;
 	}else{
-		gamepad = 4;
+		global.gamepad = 4;
 	}
 }
-
-gamepad_set_axis_deadzone(4,0.05);
+if gamepad_get_axis_deadzone(global.gamepad) != 0.5
+{
+    gamepad_set_axis_deadzone(global.gamepad, 0.5);
+}
