@@ -80,7 +80,7 @@ if (state == PStates.PWalk){ //Walking
 }
 if (state == PStates.PJump){	
 		sprite_index = SP_PlayerJump
-		image_speed = .5
+		image_speed = 1
 		if image_index >= 5 {
 			image_speed = 0 
 			VertSpeed = -8  
@@ -96,9 +96,6 @@ if (state = PStates.pFall){
 		image_speed = .5
 		if image_index <= 5 {
 			image_speed = 0 }
-			if VertSpeed = abs(0) {
-				
-				}
 		if place_meeting(x,y+1,OB_Ground){
 		Jumping = false
 		
