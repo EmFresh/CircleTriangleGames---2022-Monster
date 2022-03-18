@@ -34,14 +34,11 @@ function SC_EnemyAttack(enemy){
 	}		
         
     break;
-    case ENEMY_TYPE.ENEMY2:
-	
+    case ENEMY2:
     break;
-    case ENEMY_TYPE.ENEMY3:
-	
+    case ENEMY3:
     break;
-    case ENEMY_TYPE.ENEMY4:
-	
+    case ENEMY4:
     break;   
     }
 
