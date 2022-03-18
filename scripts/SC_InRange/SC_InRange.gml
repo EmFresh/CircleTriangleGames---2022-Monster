@@ -4,9 +4,9 @@ function SC_InRange(obj1, obj2, range){
 
     tmpx = obj1.x - obj2.x;
     tmpy = obj1.y - obj2.y;
-    length = sqrt(abs(tmpx * tmpx + tmpy * tmpy));
+    length = sqrt((tmpx * tmpx) + (tmpy * tmpy));
 
 
-    return length < range;
+    return length <= range;
 
 }
