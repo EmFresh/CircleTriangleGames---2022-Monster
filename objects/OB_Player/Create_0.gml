@@ -13,8 +13,7 @@ Jumping = false;
 Attack = false;
 Grounded = true;
 Running = false
-PTimer = 0
-PSeconds = 3
+Ptimer = 0
 //player stats
 Health		= 100;
 HealthMax	= 100;
@@ -22,12 +21,12 @@ Gold		= 50;
 Damage		= 20;
 
 //setting up the powers array
-Powers		= [];
-Powers[0]	= "Interact";
-Powers[1]	= "BonusSpeed";
-Powers[2]	= "Blink";
-Powers[3]	= "Attack";
-PowersSpot	= 1;
+//Powers		= [];
+//Powers[0]	= "Interact";
+//Powers[1]	= "BonusSpeed";
+//Powers[2]	= "Blink";
+//Powers[3]	= "Attack";
+//PowersSpot	= 1;
 
 //setting up the player health bar
 HealthBarW	= 306;
@@ -43,7 +42,7 @@ enum PStates {
 	PDeath,
 	PAttack,
 	PJump,
-	PBlink,
+	//PBlink,
 	pFall,
 }
 state = PStates.PIdle

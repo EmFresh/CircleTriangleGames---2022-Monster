@@ -56,6 +56,7 @@
     {"id":{"name":"SP_Humansall","path":"sprites/SP_Humansall/SP_Humansall.yy",},"order":0,},
     {"id":{"name":"Indicators_EquippedPowerups_SpriteSheet","path":"sprites/Indicators_EquippedPowerups_SpriteSheet/Indicators_EquippedPowerups_SpriteSheet.yy",},"order":2,},
     {"id":{"name":"OB_GroundTop","path":"objects/OB_GroundTop/OB_GroundTop.yy",},"order":3,},
+    {"id":{"name":"OB_HPlayer","path":"objects/OB_HPlayer/OB_HPlayer.yy",},"order":6,},
     {"id":{"name":"SP_WaspWalk","path":"sprites/SP_WaspWalk/SP_WaspWalk.yy",},"order":2,},
     {"id":{"name":"SP_WaspDeath","path":"sprites/SP_WaspDeath/SP_WaspDeath.yy",},"order":3,},
     {"id":{"name":"SP_PlayerWalk","path":"sprites/SP_PlayerWalk/SP_PlayerWalk.yy",},"order":8,},

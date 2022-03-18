@@ -4,10 +4,12 @@ Move			= gamepad_axis_value(global.gamepad, gp_axislh);
 UseInterattack		= gamepad_button_check_pressed(global.gamepad, gp_face3) or keyboard_check_pressed(vk_enter);
 //SwitchActiveUP	= gamepad_button_check_pressed(global.gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
 UseRun = gamepad_button_check_pressed(global.gamepad, gp_face2);
-					
+				
 
 //Movement
-
+if Running == true{
+Ptimer += 1;
+}
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
 
@@ -43,9 +45,9 @@ if (state == PStates.PIdle){ // Idle
 	if (Health <= 0){
 		state = PStates.PDeath
 	}
-	else if (Blinking = true){
-			state = PStates.PBlink
-	}
+	//else if (Blinking = true){
+	//		state = PStates.PBlink
+	//}
 	
 }
 if (state == PStates.PWalk){ //Walking
@@ -76,14 +78,14 @@ if (state == PStates.PWalk){ //Walking
 	if (Health <= 0){
 		state = PStates.PDeath
 	}
-	else if (Blinking = true){
-			state = PStates.PBlink
-	}
+	//else if (Blinking = true){
+	//		state = PStates.PBlink
+//	}
 }
 if (state == PStates.PJump){	
 		sprite_index = SP_PlayerJump
 		image_speed = 1
-		if image_index >= 5 {
+		if (image_index >= 5) {
 			image_speed = 0 
 			VertSpeed = -8  
 	if (Move > 0) {
@@ -102,7 +104,7 @@ if (state = PStates.pFall){
 		
 		sprite_index = SP_PlayerFall
 		image_speed = .5
-		if image_index <= 5 {
+		if (image_index >= 5) {
 			image_speed = 0 }
 		
 		if (Move > 0) {
@@ -120,27 +122,36 @@ if (Jumping == false) and (Grounded == true) {
 		state = PStates.PIdle
 		}	
 }
+if(UseInterattack){
+	Attack = true
+}
 if (state = PStates.PAttack){
+	SC_Attack()
 	sprite_index = SP_PlayerAttack
 	image_speed = 1
+	if (image_index >= 5){
 	Attack = false;
+	}
 	if Attack == false{
 		state = PStates.PIdle
 	}
 }
 	
-if (state = PStates.PBlink){
-	sprite_index = SP_PlayerBlink
-	image_speed = 1
-	if image_index = 5{
-	image_speed = 0
-	}
-	if Blinking == false{
-	state = PStates.PIdle
-	}
-}
-if (state = PStates.PRun){
+//if (state = PStates.PBlink){
+//	sprite_index = SP_PlayerBlink
+//	image_speed = 1
+//	if (image_index >= 5){
+//	image_speed = 0
+//	}
+//	if Blinking == false{
+//	state = PStates.PIdle
+//	}
+//}
+if(UseRun){
 	Running = true
+}
+
+if (state = PStates.PRun){
 	sprite_index = SP_PlayerRun
 	image_speed = 1
 	if(Move < 0){
@@ -150,29 +161,41 @@ if (state = PStates.PRun){
 		
 	}
 	if Running == true{
-		BonusSpeed = (BonusSpeed  - 1)
+		//SC_BonusSpeed();
+		BonusSpeed = 10;
+		if Ptimer >= 20{
+			BonusSpeed = 0;
+			Ptimer = 0;
+	
 	}
+}
 	if (BonusSpeed == 0) {
 		state = PStates.PIdle
 		Running = false
+		if (Jumping == true and Grounded == true){
+		state = PStates.PJump
+		}
 	}
 }
 
 if (state = PStates.PDeath){
 	sprite_index = SP_PlayerDeath
-	image_speed = .4
-	image_speed = 0;
+	image_speed = 0.2
+	if(image_index >= 5){
+		image_speed = 0;
+	}
+	HorSpeed = 0
 }
 	
-show_debug_message(state)
+show_debug_message(Ptimer)
 
 //what todo when input is given
-if(UseInterattack){
+//if(UseInterattack){
 	
 	// uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
 //	SC_PowersSwitch(Powers[PowersSpot]);
 //}
-if(UseRun){
+
 	
 	//moves the powers array up a step, if its at the top it will set it to 0
 	//if(PowersSpot == (array_length(Powers)-1)){
@@ -180,7 +203,7 @@ if(UseRun){
 	//}else{
 	//	PowersSpot += 1;	
 	//}
-if(UseInterattack){
+
 	
 	// moves the powers array down a step, if its at the bottom it will set it to the top
 //	if(PowersSpot == 0){
