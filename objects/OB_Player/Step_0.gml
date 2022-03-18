@@ -188,16 +188,17 @@ if (state = PStates.PDeath){
 	}
 	HorSpeed = 0
 }
-	if OB_Clock.Counter==14 {
+	if OB_Clock.Counter==2 {
 	state =  PStates.PDay
-	}
+	}	
 	if (state == PStates.PDay){
 	sprite_index = SP_PlayerBlink
 	image_speed = 1
 	if (image_index >= 2)
 	image_speed = 0
 	instance_activate_object(OB_HPlayer)
-	position_meeting(OB_HPlayer.x,OB_HPlayer.y,OB_Player)
+	OB_HPlayer.x = x
+	OB_HPlayer.y = y
 	instance_deactivate_object(OB_Player)
 	}
 show_debug_message(Ptimer)
