@@ -11,4 +11,4 @@ if(Timer == 0){
 	Timer = room_speed * Seconds;
 }
 Timer --;
-show_debug_message(Counter);
+show_debug_message("clock counter:");
