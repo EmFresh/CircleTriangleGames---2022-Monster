@@ -52,6 +52,7 @@ if (state == PStates.PWalk){ //Walking
 	if Move == 0 and (Grounded == true) {
 		state = PStates.PIdle
 		}
+	
 		sprite_index = SP_PlayerWalk
 	image_speed = 1
 	if (Move > 0) {
@@ -62,10 +63,11 @@ if (state == PStates.PWalk){ //Walking
 		image_xscale = -1;
 		}
 		//State Changes
+		
 	if (Jumping == true and Grounded == true){
 		state = PStates.PJump
 	}
-	if (BonusSpeed > 0){
+	if (Running = true){
 		state = PStates.PRun
 	}
 	if (Attack = true){
@@ -111,7 +113,7 @@ if (state = PStates.pFall){
 		image_xscale = -1;
 		}
 	
-	if place_meeting(x,y+0.2,OB_Ground){
+	if instance_nearest(x,y,OB_Ground).y {
 	Jumping = false
 }
 if (Jumping == false) and (Grounded == true) {
