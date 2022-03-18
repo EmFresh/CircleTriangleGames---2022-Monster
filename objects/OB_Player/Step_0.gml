@@ -167,12 +167,12 @@ if (state = PStates.PDeath){
 show_debug_message(state)
 
 //what todo when input is given
-if(UseInterattack){
+if(UseInterattack){}
 	
 	// uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
 //	SC_PowersSwitch(Powers[PowersSpot]);
 //}
-if(UseRun){
+if(UseRun){}
 	
 	//moves the powers array up a step, if its at the top it will set it to 0
 	//if(PowersSpot == (array_length(Powers)-1)){
@@ -180,7 +180,7 @@ if(UseRun){
 	//}else{
 	//	PowersSpot += 1;	
 	//}
-if(UseInterattack){
+if(UseInterattack){}
 	
 	// moves the powers array down a step, if its at the bottom it will set it to the top
 //	if(PowersSpot == 0){
