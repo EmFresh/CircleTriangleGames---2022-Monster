@@ -1,9 +1,9 @@
 //getting player input
 MoveJump		= gamepad_button_check_pressed(global.gamepad, gp_face1);
 Move			= gamepad_axis_value(global.gamepad, gp_axislh);
-UseActive		= gamepad_button_check_pressed(global.gamepad, gp_face3) or keyboard_check_pressed(vk_enter);
-SwitchActiveUP	= gamepad_button_check_pressed(global.gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
-SwitchActiveDown = gamepad_button_check_pressed(global.gamepad, gp_face2);
+UseInterattack		= gamepad_button_check_pressed(global.gamepad, gp_face3) or keyboard_check_pressed(vk_enter);
+//SwitchActiveUP	= gamepad_button_check_pressed(global.gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
+UseRun = gamepad_button_check_pressed(global.gamepad, gp_face2);
 					
 
 //Movement
@@ -52,6 +52,7 @@ if (state == PStates.PWalk){ //Walking
 	if Move == 0 and (Grounded == true) {
 		state = PStates.PIdle
 		}
+	
 		sprite_index = SP_PlayerWalk
 	image_speed = 1
 	if (Move > 0) {
@@ -62,10 +63,11 @@ if (state == PStates.PWalk){ //Walking
 		image_xscale = -1;
 		}
 		//State Changes
+		
 	if (Jumping == true and Grounded == true){
 		state = PStates.PJump
 	}
-	if (BonusSpeed > 0){
+	if (Running = true){
 		state = PStates.PRun
 	}
 	if (Attack = true){
@@ -111,7 +113,7 @@ if (state = PStates.pFall){
 		image_xscale = -1;
 		}
 	
-	if place_meeting(x,y+0.2,OB_Ground){
+	if instance_nearest(x,y,OB_Ground).y {
 	Jumping = false
 }
 if (Jumping == false) and (Grounded == true) {
@@ -165,24 +167,28 @@ if (state = PStates.PDeath){
 show_debug_message(state)
 
 //what todo when input is given
-if(UseActive){ 
+if(UseInterattack){}
+	
 	// uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
-	SC_PowersSwitch(Powers[PowersSpot]);
-}
-if(SwitchActiveUP){
+//	SC_PowersSwitch(Powers[PowersSpot]);
+//}
+if(UseRun){}
+	
 	//moves the powers array up a step, if its at the top it will set it to 0
-	if(PowersSpot == (array_length(Powers)-1)){
-		PowersSpot = 0;
-	}else{
-		PowersSpot += 1;	
-	}
-}else if(SwitchActiveDown){// moves the powers array down a step, if its at the bottom it will set it to the top
-	if(PowersSpot == 0){
-		PowersSpot = (array_length(Powers)-1);	
-	}else{
-		PowersSpot -= 1;	
-	}
-}
+	//if(PowersSpot == (array_length(Powers)-1)){
+	//	PowersSpot = 0;
+	//}else{
+	//	PowersSpot += 1;	
+	//}
+if(UseInterattack){}
+	
+	// moves the powers array down a step, if its at the bottom it will set it to the top
+//	if(PowersSpot == 0){
+//		PowersSpot = (array_length(Powers)-1);	
+//	}else{
+//		PowersSpot -= 1;	
+//	}
+//}
 
 
 
