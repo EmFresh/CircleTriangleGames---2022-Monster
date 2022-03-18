@@ -2,7 +2,7 @@
 
 //movement stats
 HorSpeed	= 0;
-VertSpeed	= -.1;
+VertSpeed	= 0;
 Grav		= 0.3;
 Move		= 0;
 WalkSpeed	= 5;

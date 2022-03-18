@@ -5,10 +5,12 @@ UseActive		= gamepad_button_check_pressed(gamepad, gp_face3) or keyboard_check_p
 SwitchActiveUP	= gamepad_button_check_pressed(gamepad, gp_face4) or keyboard_check_pressed(vk_shift);
 SwitchActiveDown= gamepad_button_check_pressed(gamepad, gp_face2);
 
+
 //Movement
 
 HorSpeed = Move * (WalkSpeed + BonusSpeed);
 VertSpeed = VertSpeed + Grav;
+
 
 //Flag Checks
 if !place_meeting(x,y+1,OB_Ground){
@@ -47,13 +49,13 @@ while (state == PStates.PIdle){ // Idle
 	}
 }
 if (state == PStates.PWalk){ //Walking
-	if (HorSpeed == 0) {
+	if (abs(HorSpeed) = 0) {
 		state = PStates.PIdle
 		}
+		sprite_index = SP_PlayerWalk
+	image_speed = 1
 	if (Move < 0) {
 	image_xscale = -1;
-	sprite_index = SP_PlayerWalk
-	image_speed = 1
 
 	}
 	 if (Move > 0) {
@@ -76,36 +78,32 @@ if (state == PStates.PWalk){ //Walking
 			state = PStates.PBlink
 	}
 }
-if (state == PStates.PJump){
-	if (HorSpeed == 0) and (Jumping == false) {
-		state = PStates.PIdle
-		}
-		
+if (state == PStates.PJump){	
 		sprite_index = SP_PlayerJump
-		image_speed = 0.1
-		if image_index <= 5 {
+		image_speed = .5
+		if image_index >= 5 {
 			image_speed = 0 
-			VertSpeed = -8 
-			state = PStates.pFall
-		}
-		if (HorSpeed > 0 or HorSpeed < 0) and (Jumping == false)
-		{
-		state = PStates.PWalk
+			VertSpeed = -8  
+	
+		
+		 state = PStates.pFall
 	}
 }
 if (state = PStates.pFall){
 			
-		if VertSpeed >= 0 {
+		
 		sprite_index = SP_PlayerFall
-		image_speed = 0.1
+		image_speed = .5
 		if image_index <= 5 {
 			image_speed = 0 }
-			VertSpeed = (VertSpeed + Grav)
+			if VertSpeed = abs(0) {
+				
+				}
 		if place_meeting(x,y+1,OB_Ground){
 		Jumping = false
-		}
+		
 	}
-if (HorSpeed == 0) and (Jumping == false) {
+if (HorSpeed = 0) and (Jumping == false) {
 		state = PStates.PIdle
 		}
 		if (HorSpeed > 0 or HorSpeed < 0) and (Jumping == false)
@@ -113,7 +111,7 @@ if (HorSpeed == 0) and (Jumping == false) {
 		state = PStates.PWalk
 	}
 }
-show_debug_message(VertSpeed)
+show_debug_message(Move)
 
 //what todo when input is given
 if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
