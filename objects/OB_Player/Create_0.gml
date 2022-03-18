@@ -1,7 +1,9 @@
+
+
 //movement stats
 HorSpeed	= 0;
-VertSpeed	= 0;
-Grav		= 0.5;
+VertSpeed	= -.1;
+Grav		= 0.3;
 Move		= 0;
 WalkSpeed	= 5;
 BonusSpeed	= 0;
@@ -9,6 +11,7 @@ BlinkDist = 0;
 Blinking = false;
 Jumping = false;
 Attack = false;
+Grounded = true;
 
 //player stats
 Health		= 100;
@@ -29,6 +32,19 @@ HealthBarW	= 306;
 HealthBarH	= 42;
 HealthBarX	= 50;
 HealthBarY	= 50;
+
+//States for movement
+enum PStates {
+	PIdle,
+	PWalk,
+	PRun,
+	PDeath,
+	PAttack,
+	PJump,
+	PBlink,
+	pFall,
+}
+state = PStates.PIdle
 
 //detecting the gamepad and setting it up
 gamepad = 0;

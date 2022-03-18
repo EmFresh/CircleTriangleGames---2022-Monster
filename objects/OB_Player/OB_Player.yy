@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SP_Player",
-    "path": "sprites/SP_Player/SP_Player.yy",
+    "name": "SP_PlayerFullyAnimated",
+    "path": "sprites/SP_PlayerFullyAnimated/SP_PlayerFullyAnimated.yy",
   },
   "solid": false,
   "visible": true,
