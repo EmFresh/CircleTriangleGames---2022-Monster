@@ -21,7 +21,7 @@ if (Grounded == true) and (MoveJump == true){
 	Jumping = true;
 	}
 
-if (HorSpeed == 0) {
+if (HorSpeed == 0) and (Grounded == true) {
 	state = PStates.PIdle
 }
 while (state == PStates.PIdle){ // Idle
@@ -29,9 +29,9 @@ while (state == PStates.PIdle){ // Idle
 		sprite_index = SP_PlayerIdle
 			image_speed = 0.5;
 	//State Changes
-	if (HorSpeed > 0 or HorSpeed < 0){
+	//if abs(HorSpeed) < 0 {//and (Grounded == true){
 		state = PStates.PWalk
-	}
+	
 	if (Jumping = true){
 		state = PStates.PJump
 	}
@@ -47,22 +47,23 @@ while (state == PStates.PIdle){ // Idle
 	else if (Blinking = true){
 			state = PStates.PBlink
 	}
+	
 }
 if (state == PStates.PWalk){ //Walking
-	if (abs(HorSpeed) = 0) {
+	if (abs(HorSpeed) = 0) and (Grounded = true) {
 		state = PStates.PIdle
 		}
 		sprite_index = SP_PlayerWalk
 	image_speed = 1
-	if (Move < 0) {
-	image_xscale = -1;
+	if (Move > 0) {
+	image_xscale = 1;
 
 	}
-	 if (Move > 0) {
-		image_xscale = 1;
+	 if (Move < 0) {
+		image_xscale = -1;
 		}
 		//State Changes
-	if (Jumping = true){
+	if (Jumping = true and Grounded = true){
 		state = PStates.PJump
 	}
 	if (BonusSpeed > 0){
