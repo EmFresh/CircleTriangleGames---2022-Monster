@@ -21,15 +21,14 @@ if (Grounded == true) and (MoveJump == true){
 	Jumping = true;
 	}
 
-if (HorSpeed == 0) and (Grounded == true) {
-	state = PStates.PIdle
-}
+
+
 if (state == PStates.PIdle){ // Idle
 	//Animation
 		sprite_index = SP_PlayerIdle
 			image_speed = 0.5;
 	//State Changes
-	if abs(HorSpeed) < 0 and (Grounded == true){
+	if abs(Move) > 0 and (Grounded == true){
 		state = PStates.PWalk
 	}
 	if (Jumping = true){
@@ -50,7 +49,7 @@ if (state == PStates.PIdle){ // Idle
 	
 }
 if (state == PStates.PWalk){ //Walking
-	if (abs(HorSpeed) == 0) and (Grounded == true) {
+	if Move == 0 and (Grounded == true) {
 		state = PStates.PIdle
 		}
 		sprite_index = SP_PlayerWalk
@@ -104,7 +103,7 @@ if (state = PStates.pFall){
 		if image_index <= 5 {
 			image_speed = 0 }
 		if place_meeting(x,y+1,OB_Ground){
-		Jumping = false
+		
 		if (Move > 0) {
 	image_xscale = 1;
 
@@ -113,15 +112,14 @@ if (state = PStates.pFall){
 		image_xscale = -1;
 		}
 	}
-if (HorSpeed == 0) and (Jumping == false) {
+	Jumping = false
+if (Move == 0) and (Jumping == false) {
 		state = PStates.PIdle
 		}
-		if abs(HorSpeed < 0) and (Jumping == false)
-		{
-		state = PStates.PWalk
-	}
+		
+	
 }
-show_debug_message(Move)
+show_debug_message(state)
 
 //what todo when input is given
 if(UseActive){ // uses the currently selected power by calling the SC_PowerSwitch script and passes a power as a string
