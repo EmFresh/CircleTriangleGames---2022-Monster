@@ -42,7 +42,7 @@ enum PStates {
 	PDeath,
 	PAttack,
 	PJump,
-	//PBlink,
+	PDay,
 	pFall,
 }
 state = PStates.PIdle

@@ -1,3 +1,5 @@
+position_meeting(x,y,OB_HPlayer)
+
 //getting player input
 MoveJump		= gamepad_button_check_pressed(global.gamepad, gp_face1);
 Move			= gamepad_axis_value(global.gamepad, gp_axislh);
@@ -186,7 +188,18 @@ if (state = PStates.PDeath){
 	}
 	HorSpeed = 0
 }
-	
+	if OB_Clock.Counter==14 {
+	state =  PStates.PDay
+	}
+	if (state == PStates.PDay){
+	sprite_index = SP_PlayerBlink
+	image_speed = 1
+	if (image_index >= 2)
+	image_speed = 0
+	instance_activate_object(OB_HPlayer)
+	position_meeting(OB_HPlayer.x,OB_HPlayer.y,OB_Player)
+	instance_deactivate_object(OB_Player)
+	}
 show_debug_message(Ptimer)
 
 //what todo when input is given
