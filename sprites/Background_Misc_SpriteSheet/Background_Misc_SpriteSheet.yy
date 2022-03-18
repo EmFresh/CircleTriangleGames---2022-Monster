@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 66,
-  "bbox_right": 279,
+  "bbox_left": 0,
+  "bbox_right": 261,
   "bbox_top": 0,
   "bbox_bottom": 383,
   "HTile": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 64,
+  "gridY": 64,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"fa0a1d79-c36f-4119-851e-0864c050a17b","path":"sprites/Background_Misc_SpriteSheet/Background_Misc_SpriteSheet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"fa0a1d79-c36f-4119-851e-0864c050a17b","path":"sprites/Background_Misc_SpriteSheet/Background_Misc_SpriteSheet.yy",},"LayerId":{"name":"d0b1e741-52f9-48af-9961-49a83e5d82df","path":"sprites/Background_Misc_SpriteSheet/Background_Misc_SpriteSheet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
