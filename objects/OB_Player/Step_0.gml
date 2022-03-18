@@ -153,7 +153,7 @@ if(UseRun){
 	Running = true
 }
 
-if (state = PStates.PRun){
+if (state = PStates.PRun){ // Gotta look fast
 	sprite_index = SP_PlayerRun
 	image_speed = 1
 	if(Move < 0){
@@ -162,16 +162,16 @@ if (state = PStates.PRun){
 		image_xscale = 1;
 		
 	}
-	if Running == true{
+	if Running == true{ // Gotta go fast
 		//SC_BonusSpeed();
 		BonusSpeed = 10;
 		if Ptimer >= 20{
 			BonusSpeed = 0;
 			Ptimer = 0;
 	
-	}
+	} //Change State
 }
-	if (BonusSpeed == 0) {
+	if (BonusSpeed == 0) { 
 		state = PStates.PIdle
 		Running = false
 		if (Jumping == true and Grounded == true){
@@ -180,7 +180,7 @@ if (state = PStates.PRun){
 	}
 }
 
-if (state = PStates.PDeath){
+if (state = PStates.PDeath){ // Hes Dead Jim
 	sprite_index = SP_PlayerDeath
 	image_speed = 0.2
 	if(image_index >= 5){
@@ -188,18 +188,19 @@ if (state = PStates.PDeath){
 	}
 	HorSpeed = 0
 }
-	if OB_Clock.Counter==14 {
-	state =  PStates.PDay
-	}
-	if (state == PStates.PDay){
-	sprite_index = SP_PlayerBlink
-	image_speed = 1
-	if (image_index >= 2)
-	image_speed = 0
-	instance_activate_object(OB_HPlayer)
-	position_meeting(OB_HPlayer.x,OB_HPlayer.y,OB_Player)
-	instance_deactivate_object(OB_Player)
-	}
+	//if OB_Clock.Counter==2 { // Human Teleport code
+	//state =  PStates.PDay
+	//}	
+	//if (state == PStates.PDay){
+	//sprite_index = SP_PlayerBlink
+	//image_speed = 1
+	//if (image_index >= 2)
+	//image_speed = 0
+	//instance_activate_object(OB_HPlayer)
+	//OB_HPlayer.x = x
+	//OB_HPlayer.y = y
+	//instance_deactivate_object(OB_Player)
+	//}
 show_debug_message(Ptimer)
 
 //what todo when input is given

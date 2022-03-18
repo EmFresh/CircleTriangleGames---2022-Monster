@@ -1,12 +1,12 @@
 instance_deactivate_object(OB_HPlayer)
 
 //movement stats
-HorSpeed	= 0;
-VertSpeed	= 0;
+HHorSpeed	= 0;
+HVertSpeed	= 0;
 Grav		= 0.3;
-Move		= 0;
-WalkSpeed	= 5;
-BonusSpeed	= 0;
+HMove		= 0;
+HWalkSpeed	= 5;
+
 //BlinkDist = 6;
 //Blinking = false;
 Jumping = false;
@@ -24,6 +24,7 @@ enum HStates {
 	HInteract,
 	HJump,
 	HNight,
+	HFall
 }
 Hstate = HStates.HIdle
 
