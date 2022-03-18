@@ -17,14 +17,18 @@ function SC_EnemyAttack(enemy){
 	
 	if(sprite_index!= SP_LurkerSpike)
 		sprite_index = SP_LurkerSpike;
-	if(image_index >= 4)
-	{
-		if(place_meeting(x,y,OB_Player))
+	
+	if()
+	if(place_meeting(x,y,OB_Player))
 		{		
 			
 			player = instance_nearest(x,y,OB_Player);
-			player.Health -= 20;
+			player.Health -= 10;
 		}
+	
+	if(image_index >= 4)
+	{
+		
 		sprite_index = SP_LurkerIdle;
 		attackingE = true;
 	}		
